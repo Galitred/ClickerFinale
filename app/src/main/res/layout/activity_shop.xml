@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Balance: 0.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/backFromShop"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:text="Back" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="37dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/firstUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Speed + 0.3. Price: 10" />
+
+            <Button
+                android:id="@+id/secondUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Speed + 1. Price: 30" />
+
+            <Button
+                android:id="@+id/thirdUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Speed + 10. Price: 150" />
+
+            <Button
+                android:id="@+id/fourthUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Speed + 100. Price: 1000" />
+
+            <Button
+                android:id="@+id/firstClickUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Click + 1. Price: 150" />
+
+            <Button
+                android:id="@+id/secondClickUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Click + 5. Price: 500" />
+
+            <Button
+                android:id="@+id/thirdClickUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Click + 20. Price: 1000" />
+
+            <Button
+                android:id="@+id/fourthClickUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:onClick="testShop"
+                android:text="Click + 50. Price: 2500" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
